@@ -108,3 +108,21 @@ main {
 .col:hover img.h-image {
     display: block;
 }
+
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    float: left;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.right {
+    float: right;
+
+}
