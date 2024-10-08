@@ -1,0 +1,110 @@
+/* generals */
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.debug {
+    border: 1px solid red;
+}
+
+header {
+    background-color: black;
+    color: white;
+    padding: 30px 20px;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+}
+
+/* Flex utility */
+.row {
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+
+.col {
+    width: calc((100% - 10px) / 3);
+    position: relative;
+}
+
+.col:hover {
+    cursor: pointer;
+}
+
+.col:hover .hearth {
+    display: block;
+}
+
+.col img {
+    width: 100%;
+    display: block;
+}
+
+.center {
+    justify-content: center;
+    align-items: center;
+}
+
+/* Position utility */
+.p-fixed {
+    position: fixed;
+    top: 0px;
+    left: 0;
+}
+
+.p-absolute {
+    position: absolute;
+
+}
+
+.p-relative {
+    position: relative;
+}
+
+/* corpo della pagina */
+main {
+    margin: 130px auto;
+    max-width: 1200px;
+}
+
+.badge {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 5px;
+}
+
+.red {
+    background-color: red;
+}
+
+.green {
+    background-color: green;
+}
+
+.hearth {
+    color: red;
+    font-size: 2em;
+    position: absolute;
+    bottom: 10px;
+    text-align: center;
+    width: 100%;
+    /* left:50%;
+    transform:translate(-50%); */
+    display: none;
+}
+
+.col img.h-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.col:hover img.h-image {
+    display: block;
+}
